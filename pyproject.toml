@@ -46,10 +46,10 @@ requires = ["setuptools >= 61.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-py-modules = ["app"]
+py-modules = ["src"]
 
 [tool.mypy]
-files = ["app"]
+files = ["src"]
 disallow_untyped_defs = true
 disallow_any_unimported = true
 no_implicit_optional = true
