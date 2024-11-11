@@ -1,4 +1,4 @@
-from backend_api.foo import foo
+from app.foo import foo
 
 
 def test_foo():

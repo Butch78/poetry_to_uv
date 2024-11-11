@@ -17,6 +17,9 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
+dependencies = [
+    "fastapi[standard]>=0.115.4",
+]
 
 [project.urls]
 Homepage = "https://NanoClem.github.io/backend-api/"
@@ -35,6 +38,7 @@ dev-dependencies = [
     "mkdocs>=1.4.2",
     "mkdocs-material>=8.5.10",
     "mkdocstrings[python]>=0.26.1",
+    "fastapi-cli>=0.0.5",
 ]
 
 [build-system]
@@ -42,10 +46,10 @@ requires = ["setuptools >= 61.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-py-modules = ["backend_api"]
+py-modules = ["app"]
 
 [tool.mypy]
-files = ["backend_api"]
+files = ["app"]
 disallow_untyped_defs = true
 disallow_any_unimported = true
 no_implicit_optional = true
@@ -114,4 +118,3 @@ skip_empty = true
 [tool.coverage.run]
 branch = true
 source = ["backend_api"]
-
